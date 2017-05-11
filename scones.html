@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Receptsidan</title>
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/recipe-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body id="page2">
+<div id="header"></div>
+<main>
+    <div class="info-box">
+        <h1>Scones</h1>
+    </div>
+    <div id="aside"></div>
+    <section id="recipe_above">
+        <figure>
+            <img src="img/scones_recipe_page/scones2.jpg" alt="scones">
+            <h2>Rate scones</h2>
+            <form class="ratingForm">
+                <input class="stars" type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Meh!"></label>
+                <input class="stars" type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda ok"></label>
+                <input class="stars" type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Yeah sure"></label>
+                <input class="stars" type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
+                <input class="stars" type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Scones rocks!"></label>
+            </form>
+            <p class="ratingForm">My rating: <span id="myRating"></span></p>
+            <p class="ratingForm">Votes: <span id="votes"></span></p>
+            <p class="ratingForm">Average: <span id="average"></span></p>
+        </figure>
+        <h2>Ingredients</h2>
+        <p id="select_a_portion">Select a portion </p>
+        <input id="quantity" type="range" min="1" max="8" step="1" onload="displaySlider(); changePortion(2)" oninput="changePortion(2)">
+        <p id="selectedPortion"></p>
+        <ul id="ingredients">
+            <li id="egg_scones"></li>
+            <li id="flour_scones"></li>
+            <li id="bp_scones"></li>
+            <li id="salt_scones"></li>
+            <li id="butter_scones"></li>
+            <li id="milk_scones"></li>
+        </ul>
+    </section>
+    <section id="recipe_bottom">
+    <h2>Method</h2>
+    <ol id="method">
+        <li>
+            <p>
+                Sikta vetemjöl och bakpulver i en bunke.
+                Tillsätt salt och socker samt det rumtempererade smöret. Rör med en slev så det blir smuligt.
+            </p>
+        </li>
+        <li>
+            <p>
+                Tillsätt mjölken och rör försiktigt till en slät deg.
+                Kavla ut degen på ett mjölat bakbord ca 2 cm tjock och stick ut runda bottnar eller valfri form.
+            </p>
+        </li>
+        <li>
+            <p>
+                Sätt bottnarna på en plåt med bakplåtspapper.
+                Pensla bottnarna med ett uppvispat ägg.
+            </p>
+        </li>
+        <li>
+            <p>
+                Baka sedan i 220 grader ca 15 minuter så de får vacker gyllenbrun färg.
+            </p>
+        </li>
+    </ol>
+    </section>
+</main>
+<div id="footer"></div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

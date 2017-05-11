@@ -1,0 +1,127 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Cronut</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/recipe-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body id="page3">
+<div id="header"></div>
+<main>
+    <div class="info-box">
+        <h1>Cronut</h1>
+    </div>
+    <div id="aside"></div>
+    <section id="recipe_above">
+        <figure>
+            <img src="img/cronut_recipe_page/cronut2.jpg" alt="cronut">
+            <h2>Rate cronut</h2>
+            <form class="ratingForm">
+                <input class="stars" type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Meh!"></label>
+                <input class="stars" type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda ok"></label>
+                <input class="stars" type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Yeah sure"></label>
+                <input class="stars" type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
+                <input class="stars" type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Cronut rocks!"></label>
+            </form>
+            <p class="ratingForm">My rating: <span id="myRating"></span></p>
+            <p class="ratingForm">Votes: <span id="votes"></span></p>
+            <p class="ratingForm">Average: <span id="average"></span></p>
+        </figure>
+        <h2>Ingredients</h2>
+        <p id="select_a_portion">Select a portion </p>
+        <input id="quantity" type="range" min="1" max="8" step="1" onload="displaySlider(); changePortion(3)" oninput="changePortion(3)">
+        <p id="selectedPortion"></p>
+        <ul id="ingredients">
+            <li id="yeast"></li>
+            <li id="water"></li>
+            <li id="salt_cronut"></li>
+            <li id="sugar_cronut"></li>
+            <li id="milk_cronut"></li>
+            <li id="melted_butter"></li>
+            <li id="vanilla_extract"></li>
+            <li id="egg_cronut"></li>
+            <li id="nutmeg"></li>
+            <li id="flour_cronut"></li>
+            <li id="european_butter"></li>
+        </ul>
+    </section>
+    <section id="recipe_bottom">
+    <h2>Method</h2>
+    <ol id="method">
+        <li>
+            <p>
+                Place 0.25 ounce yeast into the mixing bowl of a large stand mixer.
+                Whisk in 0.5 cup warm water and let stand until a creamy foam forms on top,
+                about 5 minutes. Add 0.5 teaspoon salt, 2.5 tablespoons sugar, 0.5 cup milk,
+                2 tablespoons melted butter, 1 teaspoon vanilla extract, 1 large egg, and
+                0.125 teaspoon nutmeg. Whisk mixture thoroughly. Pour 1 pound flour on top of
+                liquid ingredients. Place mixing bowl onto mixer.
+            </p>
+        </li>
+        <li>
+            <p>
+                Attach dough hook to mixer and knead on low speed until dough comes together in a ball and becomes soft
+                and sticky, about 3 minutes. Dough will stick to the hook and pull away from the
+                side of the bowl.
+            </p>
+        </li>
+        <li>
+            <p>
+                Transfer dough to a floured work surface, knead 2 or 3 times, and shape into a ball.
+                Wrap dough in plastic and refrigerate for 20 minutes to let gluten relax.
+            </p>
+        </li>
+        <li>
+            <p>
+                Remove dough from refrigerator, unwrap, and dust lightly with flour. Roll out into a
+                9x18-inch rectangle about 1/4 inch thick. Evenly spread 6 tablespoons softened
+                unsalted butter onto the middle third of the dough.
+            </p>
+        </li>
+        <li>
+            <p>
+                Fold one unbuttered third over
+                the buttered third and press lightly; spread remaining 6 tablespoons of unsalted
+                button on top of that third. Fold remaining third over the first (buttered) third.
+                Transfer dough onto a sheet pan, cover lightly with plastic wrap and a kitchen towel,
+                and refrigerate 20 to 30 more minutes for butter to become firm. Sprinkle dough
+                lightly with flour as you work if it becomes sticky.
+            </p>
+        </li>
+        <li>
+            <p>
+                Return dough to floured work surface and pat very gently into an 8x14 rectangle about 1/2-inch thick.
+                Fold outer thirds over center third as before; roll out into an 8x14-inch rectangle again.
+                Keep edges of rectangle as straight as possible. Fold in thirds as before. Cover dough lightly
+                with a kitchen towel, and refrigerate for 2 hours.
+            </p>
+        </li>
+        <li>
+            <p>
+                Roll the dough out to about 3/8 inch thick. Cut dough in half crosswise. Leave half on a lightly
+                floured work surface; refrigerate other half of dough until needed.
+            </p>
+        </li>
+        <li>
+            <p>
+                Use a sharp 3-inch circular cutter to cut 8 circles of dough from piece on the work surface. Use
+                1-inch size cutter to cut the donut holes out of the dough circles.
+            </p>
+        </li>
+        <li>
+            <p>
+                Line a baking sheet with waxed paper and sprinkle lightly with flour. Arrange
+                cronuts and holes onto prepared baking sheet. Let rise in a draft-free, warm place
+                (such as an unheated oven) until doubled in size, about 1 hour.
+            </p>
+        </li>
+    </ol>
+    </section>
+</main>
+<div id="footer"></div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

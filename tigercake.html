@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tiger cake</title>
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/recipe-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+</head>
+<body id="page5">
+<div id="header"></div>
+<main>
+    <div class="info-box">
+        <h1>Tiger cake</h1>
+    </div>
+    <div id="aside"></div>
+    <section id="recipe_above">
+        <figure>
+            <img src="img/tigercake_recipe_page/tigerkaka.jpg" alt="tiger cake">
+            <h2>Rate tiger cake</h2>
+            <form class="ratingForm" id="tigercakeForm">
+                <input class="stars" type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Meh!"></label>
+                <input class="stars" type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda ok"></label>
+                <input class="stars" type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Yeah sure"></label>
+                <input class="stars" type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
+                <input class="stars" type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Tiger cake rocks!"></label>
+            </form>
+            <p class="ratingForm">My rating: <span id="myRating"></span></p>
+            <p class="ratingForm">Votes: <span id="votes"></span></p>
+            <p class="ratingForm">Average: <span id="average"></span></p>
+        </figure>
+        <h2>Ingredients</h2>
+        <p id="select_a_portion">Select a portion </p>
+        <input id="quantity" type="range" min="1" max="8" step="1" onload="displaySlider(); changePortion(5)" oninput="changePortion(5)">
+        <p id="selectedPortion"></p>
+        <ul id="ingredients">
+            <li id="smor_tk"></li>
+            <li id="socker_tk"></li>
+            <li id="egg_tk"></li>
+            <li id="flour_tk"></li>
+            <li id="bp_tk"></li>
+            <li id="salt_tk"></li>
+            <li id="milk_tk"></li>
+            <li id="kakao_tk"></li>
+        </ul>
+    </section>
+    <section id="recipe_bottom">
+    <h2>Method</h2>
+    <ol id="method">
+        <li>
+            <p>
+                Sätt ugnen på 175°C.
+                Smörj och bröa en form som rymmer ca 1 1/2 liter.
+            </p>
+        </li>
+        <li>
+            <p>
+                Vispa smör och socker poröst med elvisp eller i en hushållsmaskin. Rör ner ett ägg i taget..
+                Blanda mjöl, bakpulver och salt och vänd ner i smeten tillsammans med vätskan.
+            </p>
+        </li>
+        <li>
+            <p>
+                Lägg ca 1/3 av smeten i en skål. Blanda den med kakaon. Smaksätt den ljusa smeten med vaniljsocker.
+                Klicka hälften av den ljusa smeten i formen. Fyll på med ett lager mörk och sedan resten av den
+                ljusa smeten. Dra med en gaffel genom smeten så att kakan blir marmorerad.
+            </p>
+        </li>
+        <li>
+            <p>
+                Grädda kakan i den nedre delen av ugnen ca 1 timme. Låt svalna ca 5 minuter i formen.
+                Lägg ett bakplåtspapper på galler och vänd upp kakan.
+            </p>
+        </li>
+    </ol>
+    </section>
+</main>
+<div id="footer"></div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

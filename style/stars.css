@@ -1,0 +1,71 @@
+
+.ratingScones ul, .Mi ul, .Benjamin ul, .kate ul, .emre ul{
+	background: url('http://i.imgur.com/t6Q1R4q.png') repeat-x;
+}
+
+.ratingScones a:hover, .Mi a:hover, .Benjamin a:hover, .kate a:hover, .emre a:hover {
+	background: url('http://i.imgur.com/i7nAUNd.png') repeat-x;
+}
+
+.ratingScones a:active, .Mi a:active, .Benjamin a:active,  .kate a:active, .emre a:active,
+.ratingScones a:focus, .Mi a:focus, .Benjamin a:focus, .kate a:focus, .emre  a:focus,
+.ratingScones a.checked, .Mi  a.checked, .Benjamin a.checked, .kate a checked, .emre a checked  {
+	background: url('http://i.imgur.com/JZhpcoG.png') repeat-x;
+}
+
+.ratingScones ul, .Mi ul, .Benjamin ul, .kate ul, .emre ul {
+	position: relative;
+	width: 185px; /*5 times the width of your star*/
+	height: 48px; /*height of your star*/
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-position: left top;
+}
+
+.ratingScones li, .Mi li, .Benjamin li, .kate li, .emre li{
+	display: inline;
+}
+
+.ratingScones a, .Mi a, .Benjamin a, .kate a, .emre a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-indent: -1000em;
+	height: 36px; /*height of your star*/
+	line-height: 36px; /*height of your star*/
+	outline: none;
+	overflow: hidden;
+	border: none;
+}
+
+
+	.ratingScones a.one-starS, .Mi a.one-starM, .Benjamin a.one-starB, .kate a.one-stark .emre a.one-stare{
+		width: 20%;
+		z-index: 6;
+	}
+
+	.ratingScones a.two-starS, .Mi a.two-starM, .Benjamin a.two-starB, .kate a.two-stark,.emre a.two-stare{
+		width: 40%;
+		z-index: 5;
+	}
+
+	.ratingScones a.three-starS, .Mi a.three-starM, .Benjamin a.three-starB, .kate a.three-stark,.emre a.three-stare{
+		width: 60%;
+		z-index: 4;
+	}
+
+	.ratingScones a.four-starS, .Mi a.four-starM, .Benjamin a.four-starB, .kate a.four-stark,.emre a.four-stare{
+		width: 80%;
+		z-index: 3;
+	}
+
+	.ratingScones a.five-starS, .Mi a.five-starM, .Benjamin a.five-starB, .kate a.five-stark, .emre a.five-stare{
+		width: 100%;
+		z-index: 2;
+	}
+
+	.ratingScones a.current, .Mi a.current, .kate a.current, .emre a.current{
+		z-index: 1;
+	}

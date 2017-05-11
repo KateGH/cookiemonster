@@ -1,0 +1,296 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cookiemonster - Nätets bästa bakverk!</title>
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/stars.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <!-- jPList core -->
+    <link href="style/jplist.core.min.css" rel="stylesheet" type="text/css"/>
+    <script src="js/jplist.core.min.js"></script>
+   
+ 
+    <!-- Sort Bundle -->
+    <script src="js/jplist.sort-bundle.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('#demo').jplist({
+                itemsBox: '.list'
+                , itemPath: '.list-item'
+                , panelPath: '.jplist-panel'
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<main>
+    <div class="info-box">
+        <h1>Cookiemonster - Nätets bästa bakverk!</h1>
+    </div>
+    <div id="aside"></div>
+
+    <section>
+        <div class="recepi-of-the-day">
+            <h2 class="header-text">
+                <span class="header-inline">Dagens recept</span>
+            </h2>
+            <br/>
+
+            <div class="recepi-of-the-day-img">
+                <a id="dailyLink" href="">
+                    <img id="recepi-of-the-day-img" src="" onclick="dailyMenu()" alt="dagens recept">
+                </a>
+
+            </div>
+        </div>
+
+        <div id="demo" class="box jplist">
+            <!-- ios button: show/hide panel -->
+            <div class="jplist-ios-button">
+                <i class="fa fa-sort"></i>
+                Sortera recepten
+            </div>
+            <!-- panel -->
+            <div class="jplist-panel box panel-top">
+                <select
+                        class="jplist-select"
+                        data-control-type="sort-select"
+                        data-control-name="sort"
+                        data-control-action="sort">
+                    <option data-path="default">Sortera</option>
+                    <option data-path=".title" data-order="asc" data-type="text">Recept A-Ö</option>
+                    <option data-path=".title" data-order="desc" data-type="text">Recept Ö-A</option>
+                    <option data-path=".desc" data-order="asc" data-type="text">Beskrivning A-Ö</option>
+                    <option data-path=".desc" data-order="desc" data-type="text">Beskrivning Ö-A</option>
+                    <option data-path=".like" data-order="asc" data-type="number">Röster stigande</option>
+                    <option data-path=".like" data-order="desc" data-type="number">Röster fallande</option>
+                </select>
+            </div>
+
+            <!-- data -->
+            <div class="list box text-shadow">
+                <!-- item 1 -->
+                <div class="list-item box">
+                    <!-- img -->
+                    <div class="img">
+                        <img alt="cupcakes" title="Cupcakes" src="img/scones_recipe_page/scones2.jpg">
+                    </div>
+
+                    <!-- data -->
+                    <div class="block">
+                        <p class="title">Scones</p>
+
+                        <div id="list-description">
+                            <p class="desc">Nygräddade, hembakade scones - en riktig klassiker som smakar lika bra varje
+                                gång. Bjud dem till tebjudningen, mellanmålet eller helgfrukosten.</p>
+                        </div>
+                        <p class="list-link"><a href="scones.html">Till receptet</a></p>
+
+                        <p class="like">18 Röster</p>
+
+                        <div class='ratingScones'>
+                            <ul>
+                                <li><a href='' class='one-starS'>1</a></li>
+                                <li><a href='' class='two-starS'>2</a></li>
+                                <li><a href='' class='three-starS'>3</a></li>
+                                <li><a href='' class='four-starS'>4</a></li>
+                                <li><a href='' class='five-starS'>5</a></li>
+                            </ul>
+                        </div>
+
+                        <p>Betyget är: <strong id="ratingS"> A </strong></p>
+
+                        <p>Vote: <strong id="voteS"> A </strong></p>
+
+                        <p>Recepie: <strong id="recipeS"> A </strong></p>
+
+                        <div id="messageDiv"></div>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="list-item box">
+                    <!-- img -->
+                    <div class="img">
+                        <img alt="cupcakes" title="Cupcakes" src="img/creme_brulee_recipe_page/cb200x200.jpg">
+                    </div>
+
+                    <!-- data -->
+                    <div class="block">
+                        <p class="title">Crème Brûlée</p>
+
+                        <div id="list-description1">
+                            <p class="desc">Crème Brûlée är otroligt enkelt och snabbt att göra med den behöver gott om
+                                tid i ugnen (där den sköter sig själv). Det är en praktisk dessert att göra om man vill
+                                förbereda sin dessert i förväg.</p>
+                        </div>
+                        <p class="list-link"><a href="creme_brulee.html">Till receptet</a></p>
+
+                        <p class="like">25 Röster</p>
+
+                        <div class='Mi'>
+                            <ul>
+                                <li><a href='#' class='one-starM'>1</a></li>
+                                <li><a href='#' class='two-starM'>2</a></li>
+                                <li><a href='#' class='three-starM'>3</a></li>
+                                <li><a href='#' class='four-starM'>4</a></li>
+                                <li><a href='#' class='five-starM'>5</a></li>
+                            </ul>
+                        </div>
+
+                        <p>Betyget är: <strong id="ratingM"> A </strong></p>
+
+                        <p>Vote: <strong id="voteM"> A </strong></p>
+
+                        <p>Recepie: <strong id="recipeM"> A </strong></p>
+
+                        <div id="messageDivk"></div>
+                    </div>
+                </div>
+
+                <!-- item 3 -->
+                <div class="list-item box">
+                    <!-- img -->
+                    <div class="img">
+                        <img alt="cupcakes" title="Cupcakes" src="img/cronut_recipe_page/cronut2.jpg">
+                    </div>
+
+                    <!-- data -->
+                    <div class="block">
+                        <p class="title">Cronut</p>
+
+                        <div id="list-description2">
+                            <p class="desc">Recept på New York-fenomenet cronut som är en hybrid mellan croissant och
+                                donut. Den rediga biten skapas genom att man utgår från croissantdeg, formar munkar och
+                                sedan friterar dem. Vi har fått tag på ett hemligt NY-recept - och ja, cronuts är precis
+                                lika onyttiga som du kan föreställa dig. </p>
+                        </div>
+                        <p class="list-link"><a href="cronut.html">Till receptet</a></p>
+
+                        <p class="like">12 Röster</p>
+
+                        <div class='Benjamin'>
+                            <ul>
+                                <li><a href='#' class='one-starB'>1</a></li>
+                                <li><a href='#' class='two-starB'>2</a></li>
+                                <li><a href='#' class='three-starB'>3</a></li>
+                                <li><a href='#' class='four-starB'>4</a></li>
+                                <li><a href='#' class='five-starB'>5</a></li>
+                            </ul>
+                        </div>
+
+                        <p>Betyget är: <strong id="ratingB"> A </strong></p>
+
+                        <p>Vote: <strong id="voteB"> A </strong></p>
+
+                        <p>Recepie: <strong id="recipeB"> A </strong></p>
+
+                        <div id="messageDivB"></div>
+                    </div>
+                </div>
+
+                <!-- item 4 -->
+                <div class="list-item box">
+                    <!-- img -->
+                    <div class="img">
+                        <img alt="cupcakes" title="Cupcakes" src="img/tigercake_recipe_page/tigerkaka.jpg">
+                    </div>
+
+                    <!-- data -->
+                    <div class="block">
+                        <p class="title">Tigerkaka</p>
+
+                        <div id="list-description3">
+                            <p class="desc">Tigerkaka är en sockerkaka där en del av smeten fått chokladsmak. En
+                                marmorerad kaka som brukar uppskattas både av barn och vuxna. Här är en lite lättare
+                                variant, med mindre smör i smeten.</p>
+                        </div>
+                        <p class="list-link"><a href="tigercake.html">Till receptet</a></p>
+
+                        <p class="like">11 Röster</p>
+                        
+                        
+                        <div class='emre'>
+		                <ul>
+			            <li><a href='#' class='one-stare'>1</a></li>
+			            <li><a href='#' class='two-stare'>2</a></li>
+			            <li><a href='#' class='three-stare'>3</a></li>
+			            <li><a href='#' class='four-stare'>4</a></li>
+			            <li><a href='#' class='five-stare'>5</a></li>
+		                </ul>
+	                    </div>
+
+	                    <p>Betyget är: <strong id="ratinge"> A </strong></p>
+	                    <p>Vote: <strong id="votee"> A </strong></p>
+	                    <p>Recepie: <strong id="recipee"> A </strong></p>
+
+			            <div id="messageDive"></div>
+
+                        </div>
+                </div>
+
+                <!-- item 5 -->
+                <div class="list-item box">
+                    <!-- img -->
+                    <div class="img">
+                        <img alt="cupcakes" title="Cupcakes" src="img/vlt.jpg">
+                    </div>
+
+                    <!-- data -->
+                    <div class="block">
+                        <p class="title">Värmlandstårta</p>
+
+                        <div id="list-description4">
+                            <p class="desc">Ett av Hirams klassiska recept är Värmlandstårtan som går bra att lägga i
+                                frysen och ta fram när det är dags för kalas. Jag valde att göra portionsbitar
+                                dekorerade med granatäpple den här gången vilket Hiram med största sannolikhet hade
+                                applåderat.
+                            </p>
+                        </div>
+                        <p class="list-link"><a href="varmlandstarta.html">Till receptet</a></p>
+
+                        <p class="like">5 Röster</p>
+
+                        <div class='kate'>
+                            <ul>
+                                <li><a href='#' class='one-stark'>1</a></li>
+                                <li><a href='#' class='two-stark'>2</a></li>
+                                <li><a href='#' class='three-stark'>3</a></li>
+                                <li><a href='#' class='four-stark'>4</a></li>
+                                <li><a href='#' class='five-stark'>5</a></li>
+                            </ul>
+                        </div>
+                        <p>Betyget är: <strong id="ratingk"> A </strong></p>
+
+                        <p>Vote: <strong id="votek"> A </strong></p>
+
+                        <p>Recepie: <strong id="recipek"> A </strong></p>
+
+                        <div id="messageDivk"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box jplist-no-results text-shadow align-center">
+                <p>No results found</p>
+            </div>
+        </div>
+
+    </section>
+</main>
+<div id="footer"></div>
+
+<script src="js/dagen.js"></script>
+<script src="js/clickF2.js"></script>
+<script src="js/GetRating2.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
+
+
+

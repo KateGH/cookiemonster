@@ -1,0 +1,332 @@
+main {
+    height: 1300px;
+    margin-top: 128px;
+    padding: 30px 20px 120px;
+}
+
+.recepi-list > div{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 0 16px 10px;
+
+}
+
+.recepi-list .image img {
+    height: auto;
+    padding: 0;
+    width: 160px;
+}
+
+
+#recipe_above {
+	display: inline-block;
+	width: 100%;
+}
+
+.img_source{
+    font-size: 12px;
+    text-align: right;
+}
+
+.img_source a:hover {
+    color: pink;
+}
+
+.step {
+    width: 300px;
+    margin: 10px;
+}
+
+#method { /* ol */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    counter-reset: item;
+    list-style: none;
+}
+
+#method li {
+    flex-grow: 1;
+    flex-basis: 0;
+    list-style-position:inside;
+    margin: 20px;
+}
+
+#method li:before {
+    content: counter(item) "  ";
+    counter-increment: item;
+    color: #003300;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+#method img {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#ingredients {
+    margin: 10px;
+    line-height: 200%;
+    list-style-image: url("../img/check.png");
+}
+
+#ingredients li {
+    list-style-position: inside;
+}
+
+#select_a_portion, #selectedPortion {
+	margin: 10px;
+}
+
+#main_ol {
+	margin: 15px 0;
+	padding-left:40px;
+	line-height: 150%;
+	list-style-position: inside;
+}
+
+#main_ol li a:hover, .hover a:hover {
+    color: pink;
+}
+
+figure  {
+    border:1px solid lightgrey;
+    float: right;
+    text-align: left;
+    padding: 10px;
+	width: 40%;
+	height: 50%;
+	background-color: white;
+}
+
+.img_source {
+    font-size: 12px;
+    text-align: right;
+}
+
+.img_source a:hover {
+    color: pink;
+}
+
+.step {
+    width: 300px;
+    margin: 10px;
+}
+dt{
+    color: #57c7b3;
+    font-weight:400;
+    text-transform:uppercase;
+    font-family: "AkkuratRegular",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    padding:2%;
+    margin-left:26px;
+}
+
+.info-box {
+    background-color: #57c7b3;
+    border-radius: 14px;
+    margin: 0 0 30px 0;
+    padding: 4px;
+    margin-top:20px;
+}
+
+.info-box h1,h3 {
+    border: 2px solid #fff;
+    border-radius: 13px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #777;
+}
+
+
+#close1, #close2, #close3, #close4, #close5{
+    float:right;
+    display:inline-block;
+    padding:1px 7px;
+    background:#fff;
+    border:2px solid #57c7b3;
+    color:#000;
+    border-radius: 20px;
+    margin-top:-20px;
+    font-family: "AkkuratRegular",Arial,Helvetica,sans-serif;
+}
+
+.list-title {
+    color: #57c7b3;
+    font-family: "AkkuratRegular",Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: -12px;
+}
+
+#myDIVCremeBrulee {
+    background-color: #fdfdfd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    padding: 10px;
+    position:fixed;
+    top: 20px;
+    visibility: hidden;
+    width: 70%;
+    z-index: 100;
+    margin:-140px -60px;
+}
+
+#myDIVscones {
+    background-color: #fdfdfd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    padding: 10px;
+    position:fixed;
+    top: 20px;
+    visibility: hidden;
+    width: 70%;
+    z-index: 100;
+    margin:-140px -60px;
+}
+
+
+#myDIVCronut {
+    background-color: #fdfdfd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    padding: 10px;
+    position:fixed;
+    top: 20px;
+    visibility: hidden;
+    width: 70%;
+    z-index: 100;
+    margin:-140px -60px;
+}
+
+#myDIVTigerKaka {
+    background-color: #fdfdfd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    padding: 10px;
+    position:fixed;
+    top: 20px;
+    visibility: hidden;
+    width: 70%;
+    z-index: 100;
+    margin:-140px -60px;
+}
+
+#myDIVVarmland-Cake {
+    background-color: #fdfdfd;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    height: auto;
+    left: 10%;
+    opacity: 1;
+    padding: 10px;
+    position:fixed;
+    top: 20px;
+    visibility: hidden;
+    width: 70%;
+    z-index: 100;
+    margin:-140px -60px;
+}
+#CremeBrulee, #scones, #cronut, #tigerKaka, #varmland-Cake{
+    background: #57c7b3 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #fff;
+    padding: 6px 20px;
+    font-family: "AkkuratRegular",Arial,Helvetica,sans-serif;
+    position: absolute;
+    left:20%;
+    text-transform: lowercase;
+    font-size:14px;
+    font-weight:400;
+    
+}
+
+.recepi-list > div {
+    margin-bottom: 15px;
+    overflow: auto;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.boxed {
+    background-color: white;
+    font-style: italic;
+}
+
+.TR {
+    border: 2px solid #fff;
+    font-style: italic;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1% auto;
+    padding: 0rem;
+    text-align: center;
+    text-shadow: 1px 1px 0 #777;
+    align-self: center;
+}
+
+@media only screen and (max-width: 480px) {
+
+.recepi-list .image img {
+    height: auto;
+    padding: 0;
+    width: 108%;
+}
+
+.recepi-list .image {
+    float: none;
+    margin-right: 20px;
+}  
+
+#CremeBrulee, #scones, #cronut, #tigerKaka, #varmland-Cake {
+    background: #57c7b3 none repeat scroll 0 0;
+    border-radius: 15px;
+    color: #fff;
+    font-family: "AkkuratRegular",Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 18%;
+    padding: 6px 20px;
+    text-transform: lowercase;
+}
+
+.recepi-list > div {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    overflow: auto;
+    padding-bottom: 30px;
+}
+
+main {
+    height: 1300px;
+    margin-top: 150px;
+    padding: 30px 20px 120px;
+}
+
+}

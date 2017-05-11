@@ -1,0 +1,86 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Crème brûlée</title>
+    <link rel="stylesheet" href="style/main-style.css">
+    <link rel="stylesheet" href="style/recipe-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<body id="page1">
+<div id="header"></div>
+
+<main>
+    <div class="info-box">
+        <h1>Crème brûlée</h1>
+    </div>
+    <div id="aside"></div>
+    <section id="recipe_above">
+        <figure>
+            <img src="img/creme_brulee_recipe_page/cb2.jpg" alt="crème brûlée">
+            <h2>Rate crème brûlée</h2>
+            <form class="ratingForm" id="cbForm">
+                <input class="stars" type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Meh!"></label>
+                <input class="stars" type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda ok"></label>
+                <input class="stars" type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Yeah sure"></label>
+                <input class="stars" type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
+                <input class="stars" type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Creme brûlée rocks!"></label>
+            </form>
+            <p class="ratingForm">My rating: <span id="myRating"></span></p>
+            <p class="ratingForm">Votes: <span id="votes"></span></p>
+            <p class="ratingForm">Average: <span id="average"></span></p>
+        </figure>
+
+        <h2>Ingredients</h2>
+        <p id="select_a_portion">Select a portion </p>
+        <input id="quantity" type="range" min="1" max="8" step="1" onload="displaySlider(); changePortion(1)" oninput="changePortion(1)">
+        <p id="selectedPortion"></p>
+        <ul id="ingredients">
+            <li id="egg_yolk"></li>
+            <li id="milk"></li>
+            <li id="sugar"></li>
+            <li id="heavy_cream"></li>
+            <li id="vanilla_pod"></li>
+        </ul>
+    </section>
+     <section id="recipe_bottom">
+        <h2>Method</h2>
+        <ol id="method">
+            <li>
+                <p>
+                    Preheat the oven to 160 degrees C.
+                    Place the cream, vanilla bean and its pulp into a medium saucepan set over medium-high heat and
+                    bring to a boil. Remove from the heat, cover and allow to sit for 15 minutes. Remove the vanilla bean
+                    and reserve for another use.
+                </p>
+            </li>
+            <li>
+                <p>
+                    In a medium bowl, whisk together a half of the sugar and the egg yolks until well blended and it
+                    just starts to lighten in color. Add the cream a little at a time, stirring continually. Pour the
+                    liquid into 200-250 ml ramekins.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Place the ramekins into a large cake pan or roasting pan. Pour enough hot water into the pan to
+                    come halfway up the sides of the ramekins. Bake just until the creme brulee is set, but still trembling
+                    in the center, approximately 40 to 45 minutes. Remove the ramekins from the roasting pan and refrigerate
+                    for at least 2 hours and up to 3 days.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Remove the creme brulee from the refrigerator for at least 30 minutes prior to browning the sugar on top.
+                    Divide the remaining sugar equally among the dishes and spread evenly on top. Using
+                    a torch, melt the sugar and form a crispy top. Allow the creme brulee to sit for at least 5 minutes
+                    before serving.
+                </p>
+            </li>
+        </ol>
+     </section>
+</main>
+<div id="footer"></div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
